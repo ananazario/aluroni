@@ -1,18 +1,18 @@
 [
     {
-      "nome" : " " ,
-      "value" : " "
+      "nome" : "" ,
+      "value" : ""
     },
     {
-      "nome" : " Porção " ,
-      "value" : " porcao "
+      "nome" : "Porção" ,
+      "value" : "porcao"
     },
     {
-      "nome" : " Qtd. pessoas " ,
-      "value" : " qtd_pessoas "
+      "nome" : "Qtd. pessoas" ,
+      "value" : "qtd_pessoas"
     },
     {
-      "nome" : " Preço " ,
-      "valor" : " preço "
+      "nome" : "Preço" ,
+      "value" : "preço"
     }
   ]
