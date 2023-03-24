@@ -3,14 +3,22 @@
 
 .menu {
     padding: 20px $padding-horizontal;
+  
     @media (max-width: $desktop_xsm) {
-      padding: 20px $padding-horizontal-mobile;
+      padding: 0 $padding-horizontal-mobile;
     }
     @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
       padding: 20px $padding-horizontal-sm;
     }
     @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
       padding: 20px $padding-horizontal-md;
+    }
+    @media (max-width: $mobile) {
+      padding: 0;
+
+      img {
+        padding: 10px 20px 5px;
+      }
     }
   }
   
@@ -25,17 +33,30 @@
     @media (max-width: $desktop_xsm) {
       padding: 0px $padding-horizontal-mobile;
     }
+
     @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
       padding: 0px $padding-horizontal-sm;
     }
+
     @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
       padding: 0px $padding-horizontal-md;
     }
+
+    @media (max-width: $mobile) {
+      padding: 10px;
+      background-position: center;
+    }
+
     &__text {
       color: white;
       font-size: 5rem;
       min-width: 400px;
       width: 40%;
+
+      @media (max-width: $mobile) {
+        font-size: 4rem;
+       
+      }
     }
   }
   
@@ -50,10 +71,18 @@
     @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
       padding: 50px $padding-horizontal-md;
     }
+    @media (max-width: $mobile) {
+      padding: 20px;
+    }
+
     &__titulo {
       color: $dark;
       font-size: 3rem;
       margin-bottom: 30px;
+
+      @media (max-width: $mobile) {
+        margin-bottom: 20px;
+      }
     }
     &__filtros {
       align-items: center;

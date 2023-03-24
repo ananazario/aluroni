@@ -21,6 +21,9 @@
     font-weight: bold;
     outline: none;
     width: 100%;
+    @media (max-width: $mobile) {
+      width: 90%;
+    }
     &::placeholder {
       color: #4c4d5e;
     }
