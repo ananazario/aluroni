@@ -1,5 +1,7 @@
 import cardapio from '../../data/lista-cardapio.json';
 import styles from './Inicio.module.scss';
+import stylesTema from '../../styles/Tema.module.scss';
+import nossaCasa from "../../assets/nossa_casa.png"
 
 const Inicio = () => {
 
@@ -8,7 +10,7 @@ const Inicio = () => {
 
     return (
         <section>
-            <h3 className={styles.titulo}>
+            <h3 className={stylesTema.titulo}>
                 Recomendações de cozinha
             </h3>
             <div className={styles.recomendados}>
@@ -22,6 +24,15 @@ const Inicio = () => {
                         </button>
                     </div>
                 ))}
+            </div>
+            <h3 className={stylesTema.titulo}>Nossa casa</h3>
+            <div className={styles.nossaCasa}>
+                <img src={nossaCasa} alt="Casa do Aluroni" />
+                <div className={styles.nossaCasa__endereco}>
+                    Rua Vergueiro, 3186
+                    <br />
+                    Vila Mariana, SP
+                </div>
             </div>
         </section>
     )
