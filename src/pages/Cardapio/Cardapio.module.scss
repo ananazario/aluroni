@@ -28,7 +28,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
-    height: 300px;
+    height: 25rem;
     padding: 0px $padding-horizontal;
     @media (max-width: $desktop_xsm) {
       padding: 0px $padding-horizontal-mobile;
@@ -51,7 +51,7 @@
       color: white;
       font-size: 5rem;
       min-width: 400px;
-      width: 40%;
+      width: 50%;
 
       @media (max-width: $mobile) {
         font-size: 4rem;
