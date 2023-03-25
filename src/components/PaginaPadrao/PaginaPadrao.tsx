@@ -1,7 +1,7 @@
 import styles from './PaginaPadrao.module.scss';
 import { Outlet } from 'react-router-dom';
 
-const PaginaPadrao = () => {
+const PaginaPadrao = ({ children }: { children?: React.ReactNode }) => {
     return (
         <>
             <header className={styles.header}>
@@ -11,6 +11,7 @@ const PaginaPadrao = () => {
             </header>
             <div>
                 <Outlet />
+                {children}
             </div>
         </>
     )
