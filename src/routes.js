@@ -4,6 +4,7 @@ import Cardapio from "./pages/Cardapio/Cardapio";
 import Menu from "./components/Menu/Menu";
 import PaginaPadrao from "./components/PaginaPadrao/PaginaPadrao";
 import Sobre from "./pages/Sobre/Sobre";
+import Footer from "./pages/Footer/Footer";
 
 export default function AppRouter() {
     return (
@@ -17,6 +18,7 @@ export default function AppRouter() {
                         <Route path="/sobre" element={<Sobre />} />
                     </Route>
                 </Routes>
+            <Footer />
             </BrowserRouter>
         </main>
     )
