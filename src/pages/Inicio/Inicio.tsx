@@ -17,7 +17,7 @@ const Inicio = () => {
     }
 
     return (
-        <section className={styles}>
+        <section className={stylesTema.container}>
             <h3 className={stylesTema.titulo}>
                 Recomendações de cozinha
             </h3>

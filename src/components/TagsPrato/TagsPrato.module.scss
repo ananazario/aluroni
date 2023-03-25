@@ -1,22 +1,6 @@
 @import '../../styles/variaveis';
 @import '../../styles/breakpoints';
 
-
-.conteudo {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-  
-    &__descricao {
-      color: $darkest-grey;
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
-    &____detalhes {
-      display: flex;
-      justify-content: space-between;
-    }
-  }
   $massas: #d73b3b;
   $carnes: #30201e;
   $combos: #e6c864;
