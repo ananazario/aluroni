@@ -4,7 +4,7 @@ import Cardapio from "./pages/Cardapio/Cardapio";
 import Menu from "./components/Menu/Menu";
 import PaginaPadrao from "./components/PaginaPadrao/PaginaPadrao";
 import Sobre from "./pages/Sobre/Sobre";
-import Footer from "./pages/Footer/Footer";
+import Footer from "./components/Footer/Footer";
 import NotFound from "./pages/NotFound/NotFound";
 import Prato from "./pages/Prato/Prato";
 

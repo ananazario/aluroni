@@ -1,7 +1,7 @@
 import styles from './Prato.module.scss';
 import cardapio from '../../data/lista-cardapio.json';
 import { useNavigate, useParams } from 'react-router-dom';
-import classNames from 'classnames';
+import TagsPrato from '../../components/TagsPrato/TagsPrato';
 
 const Prato = () => {
     
@@ -33,23 +33,7 @@ const Prato = () => {
             <p className={styles.conteudo__descricao}>
               {prato.descricao}
             </p>
-            <div className={styles.tags}>
-              <div className={classNames({
-                [styles.tags__tipo] : true,
-                [styles[`tags__tipo__${prato.categoria.label.toLowerCase()}`]] : true
-              })}>
-                {prato.categoria.label}
-              </div>
-              <div className={styles.tags__porcao}>
-                {prato.tamanho}g
-              </div>
-              <div className={styles.tags__qtdpessoas}>
-                Serve {prato.servindo} pessoa{prato.servindo === 1 ? '' : 's'}
-              </div>
-              <div className={styles.tags__valor}>
-                R$ {prato.preco.toFixed(2)}
-              </div>
-            </div>
+            <TagsPrato {...prato} />
           </div>
         </section>
       </>
