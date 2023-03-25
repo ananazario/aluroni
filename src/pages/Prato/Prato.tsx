@@ -2,6 +2,7 @@ import styles from './Prato.module.scss';
 import cardapio from '../../data/lista-cardapio.json';
 import { useNavigate, useParams } from 'react-router-dom';
 import TagsPrato from '../../components/TagsPrato/TagsPrato';
+import NotFound from '../NotFound/NotFound';
 
 const Prato = () => {
     
@@ -10,7 +11,7 @@ const Prato = () => {
   const prato = cardapio.find(item => item.id === Number(id))
 
   if (!prato) {
-    return '';
+    return <NotFound  />;
   }
 
     return (
