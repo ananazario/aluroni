@@ -1,10 +1,8 @@
 import styles from "./Item.module.scss";
-import itens from "../../../../data/lista-cardapio.json";
 import classNames from 'classnames';
+import { Prato } from "../../../../types/Prato";
 
-type Props = typeof itens[0]
-
-const Item = (props : Props) => {
+const Item = (props : Prato) => {
 
     const {photo, titulo, descricao, categoria, servindo, tamanho, preco} = props;
 
