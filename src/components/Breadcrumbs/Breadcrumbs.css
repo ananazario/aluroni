@@ -1,0 +1,12 @@
+.breadcrumb {
+    color: #d5d2d2;
+    text-decoration: none;
+}
+
+.breadcrumb:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb-active {
+    color: #fff;
+}

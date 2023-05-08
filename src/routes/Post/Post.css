@@ -1,0 +1,49 @@
+.div-form-label {
+    margin: .5rem 0 1rem;
+}
+
+.form-label {
+    font-size: 1.3rem;
+}
+
+.form-control {
+    height: 3rem;
+}
+
+.form-control {
+    font-size: 20px;
+}
+
+.btn-pattern {
+    width: 12rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+.modal-container {
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    animation: .5s modal forwards;
+}
+
+.modal-container.active {
+    display: flex;
+}
+
+@keyframes modal {
+    from {
+        transform: translate3d(-50px, 0px, 0);
+    } to {
+        transform: translate3d(0, -0, 0);
+    }
+}

@@ -1,0 +1,6 @@
+.notfound {
+    height: calc(100vh - 40vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

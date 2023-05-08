@@ -1,0 +1,35 @@
+.name {
+    margin-right: 1rem;
+}
+
+.menu.active {
+    display: block;
+    visibility: visible;
+}
+
+.table.active {
+    animation: .5s tableSubmenuEffect forwards;
+}
+
+.menu {
+    display: none;
+    animation: .5s tableSubmenuEffect forwards;
+}
+
+@keyframes tableSubmenuEffect {
+    from {
+        transform: translate3d(0, -10px, 0);
+    } to {
+        transform: translate3d(0,0,0);
+    }
+}
+
+@keyframes openSubmenu {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -10px, 0);
+    } to {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
